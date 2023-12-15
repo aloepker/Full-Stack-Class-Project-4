@@ -96,8 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validate Phone Number
-    if (empty($_POST["Phone_Number"]) || !preg_match("/^\(\d{3}\)\d{3}-\d{4}$/", $_POST["Phone_Number"])) {
-        $errors["Phone_Number"] = "Phone Number must be in the format (123)456-7890";
+    if (empty($_POST["Phone_Number"]) || !preg_match("/^\(\d{3}\) \d{3}-\d{4}$/", $_POST["Phone_Number"])) {
+        $errors["Phone_Number"] = "Phone Number must be in the format (123) 456-7890";
     } else {
         $phoneNumber = test_input($_POST["Phone_Number"]);
     }
@@ -154,7 +154,7 @@ function test_input($data) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#faaafa">
- <!-- <script src="js/validation.js" defer></script> -->
+  <script src="js/validation.js" defer></script>
 </head>
 <body>
 <div id="container">

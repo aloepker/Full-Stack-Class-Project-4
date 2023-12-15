@@ -134,8 +134,8 @@ zipCode.addEventListener("blur", validateZipCode);
 //X 11 phone number
 function validatePhoneNumber() {
     let strippedPhoneNumber = phoneNumber.value.replace(/\D/g, '');
-    if ((strippedPhoneNumber.value.trim().length === 10) && strippedPhoneNumber.value.match(digitCheck)) {
-        phoneNumber.value = '(' + strippedPhoneNumber.value.slice(0, 3) + ') ' + strippedPhoneNumber.value.slice(3, 6) + '-' + strippedPhoneNumber.value.slice(6, 10);
+    if ((strippedPhoneNumber.trim().length === 10) && strippedPhoneNumber.match(digitCheck)) {
+        phoneNumber.value = '(' + strippedPhoneNumber.slice(0, 3) + ') ' + strippedPhoneNumber.slice(3, 6) + '-' + strippedPhoneNumber.slice(6, 10);
         document.getElementById("PN").style.visibility = 'hidden';
         return 0;
     } else {
@@ -159,7 +159,6 @@ function validateEMail() {
 eMail.addEventListener("blur", validateEMail);
 
 function submitValidation(event) {
-    alert("Project 3 is live");
     let pDCounter = 0;
 //X 9 State
     if (state.options[state.selectedIndex].value === "na") {
@@ -205,7 +204,6 @@ function submitValidation(event) {
     pDCounter += validateAddress1()
     pDCounter += validateAddress2()
     pDCounter += validateCity()
-    //pDCounter += validateZipCode()
     pDCounter += validateEMail()
 
     if (zipCode.value !== "") {
@@ -221,16 +219,6 @@ function submitValidation(event) {
         document.getElementById("PN").style.visibility = 'visible';
         pDCounter++;
     }
-
-    /*
-    if (eMail.value !== "") {
-        document.getElementById("E").style.visibility = 'hidden';
-    } else {
-        document.getElementById("E").style.visibility = 'visible';
-        pDCounter++;
-    }
-    */
-
 
     if (pDCounter > 0) {
         event.preventDefault();
