@@ -131,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($errors)) {
-        header("Location: confirmation.html");
+        header("Location: confirmation.php");
         exit();
     }
 }

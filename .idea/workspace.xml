@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Project 4's First Commit!&#10;&#10;Run Adam Run! you have 8.5 hours to get this done!">
+    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database.">
+      <change afterPath="$PROJECT_DIR$/connectionInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertValidData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selectUserData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectinfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projectinfo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +105,7 @@
       <workItem from="1702609691812" duration="5904000" />
       <workItem from="1702622128125" duration="315000" />
       <workItem from="1702655506651" duration="8307000" />
-      <workItem from="1702676443762" duration="1154000" />
+      <workItem from="1702676443762" duration="4458000" />
     </task>
     <task id="LOCAL-00001" summary="Got organized on my new windows machine after apache2 and nginx bricked my linux laptop trying to both run at startup with default config values &gt;.&lt;. I have managed to start the javascript validation code, definitely still in the beginning stages though. Steady as she goes.">
       <option name="closed" value="true" />
@@ -254,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702675818425</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database.">
+      <option name="closed" value="true" />
+      <created>1702677658893</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702677658893</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +305,7 @@
     <MESSAGE value="I was mistaken, I needed to update several layers of the validation; Thankfully I am almost done now." />
     <MESSAGE value="Actually, this is MVP code, so I am done. Next project!" />
     <MESSAGE value="Project 4's First Commit!&#10;&#10;Run Adam Run! you have 8.5 hours to get this done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project 4's First Commit!&#10;&#10;Run Adam Run! you have 8.5 hours to get this done!" />
+    <MESSAGE value="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database." />
   </component>
 </project>
