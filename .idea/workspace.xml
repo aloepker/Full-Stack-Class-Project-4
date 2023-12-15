@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Actually, this is MVP code, so I am done. Next project!" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YhoOSgwsxNxj5Wivmk4b1iDkTL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Full-Stack-Class-Project-3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Full-Stack-Class-Project-3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="" />
+      <created>1700987141156</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700987141156</updated>
+      <workItem from="1700987142259" duration="536000" />
+      <workItem from="1701227983360" duration="7340000" />
+      <workItem from="1701562259012" duration="4131000" />
+      <workItem from="1702080742108" duration="2305000" />
+      <workItem from="1702149101989" duration="1645000" />
+      <workItem from="1702174962561" duration="8744000" />
+      <workItem from="1702252390983" duration="3529000" />
+      <workItem from="1702350430844" duration="4500000" />
+      <workItem from="1702430347106" duration="11316000" />
+      <workItem from="1702488628342" duration="13787000" />
+      <workItem from="1702506973540" duration="4000" />
+      <workItem from="1702506988974" duration="840000" />
+      <workItem from="1702508280521" duration="381000" />
+      <workItem from="1702509555896" duration="1756000" />
+      <workItem from="1702526899571" duration="1089000" />
+      <workItem from="1702528197159" duration="3070000" />
+      <workItem from="1702609691812" duration="5904000" />
+      <workItem from="1702622128125" duration="315000" />
+      <workItem from="1702655506651" duration="8307000" />
+    </task>
+    <task id="LOCAL-00001" summary="Got organized on my new windows machine after apache2 and nginx bricked my linux laptop trying to both run at startup with default config values &gt;.&lt;. I have managed to start the javascript validation code, definitely still in the beginning stages though. Steady as she goes.">
+      <option name="closed" value="true" />
+      <created>1701232486262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701232486262</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Well I hate javascript right now.. It refuses to run my validation code even though everything aooears to be set up right... fuck.">
+      <option name="closed" value="true" />
+      <created>1701237209465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701237209465</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Figured out my problem! Thanks professor!&#10;&#10;Continuing on with client side validation setup, woo!">
+      <option name="closed" value="true" />
+      <created>1702248962353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702248962353</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Set up error labels to the right of my text boxes on the registration form.">
+      <option name="closed" value="true" />
+      <created>1702255099904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702255099904</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Done for the day.&#10;Tomorrow I my goal is to finish up with project 2 and start on project 3.&#10;&#10;Project 2 still needs validation code for each of the input boxes in the form. Maybe a little cleaning up of the code as well. Hopefully no more than a couple of hours.&#10;&#10;Run Adam run!&#10;Almost there!! We got this!!">
+      <option name="closed" value="true" />
+      <created>1702256299208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702256299208</updated>
+    </task>
+    <task id="LOCAL-00006" summary="organized code to add in the if functions for each of the form fields. All that is left to do is add the code! should take one more day. Woo!">
+      <option name="closed" value="true" />
+      <created>1702357082248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702357082248</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding in validation code for on blur events.&#10;&#10;Still need to add:&#10;password reqs&#10;repeat password reqs&#10;zipcode reqs&#10;phone number reqs&#10;&#10;and submit validation for:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;looking like I will be finishing tomorrow morning.">
+      <option name="closed" value="true" />
+      <created>1702441715158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702441715158</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finished adding:&#10;password reqs&#10;repeat password reqs&#10;zipcode reqs&#10;phone number reqs&#10;&#10;stil working on:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;All most done!! Run Adam Run!">
+      <option name="closed" value="true" />
+      <created>1702497650678</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702497650678</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Finished adding:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;That is it!&#10;Time to turn in project 2 and start on project 3!">
+      <option name="closed" value="true" />
+      <created>1702504829478</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702504829478</updated>
+    </task>
+    <task id="LOCAL-00010" summary="First Commit of project 3!&#10;&#10;Time to organize and work as fast as possible! I have less than 3 days to get this finished to pass the class, we got this!">
+      <option name="closed" value="true" />
+      <created>1702507088831</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702507088831</updated>
+    </task>
+    <task id="LOCAL-00011" summary="projectInfo updated, time to start scafolding the project!">
+      <option name="closed" value="true" />
+      <created>1702508550680</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702508550680</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated to a .php file and getting things started!&#10;&#10;Taking some stabs at this php code, think I am starting to understand a few basics, but this will require a little focus.&#10; &#10; A little confusing, but so far so good though.">
+      <option name="closed" value="true" />
+      <created>1702529828932</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702529828932</updated>
+    </task>
+    <task id="LOCAL-00013" summary="moving along, excited to come back and work at it tomorrow!">
+      <option name="closed" value="true" />
+      <created>1702531824525</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702531824525</updated>
+    </task>
+    <task id="LOCAL-00014" summary="I think I am finished! Hell yea! one more project to take care of tomorrow and I am done for the semester!">
+      <option name="closed" value="true" />
+      <created>1702615931981</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702615931981</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Actually, i decided to add some more code to make sure the valid form fields reappear on the form after submission.&#10;&#10;I half broke the reset button in the process, but hey, I think this is better overall. Guess we will see.">
+      <option name="closed" value="true" />
+      <created>1702618981443</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702618981443</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Finished and ready to turn in">
+      <option name="closed" value="true" />
+      <created>1702622319160</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702622319160</updated>
+    </task>
+    <task id="LOCAL-00017" summary="I was mistaken, I needed to update several layers of the validation; Thankfully I am almost done now.">
+      <option name="closed" value="true" />
+      <created>1702672993194</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702672993194</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Actually, this is MVP code, so I am done. Next project!">
+      <option name="closed" value="true" />
+      <created>1702673054138</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702673054138</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Got organized on my new windows machine after apache2 and nginx bricked my linux laptop trying to both run at startup with default config values &gt;.&lt;. I have managed to start the javascript validation code, definitely still in the beginning stages though. Steady as she goes." />
+    <MESSAGE value="Well I hate javascript right now.. It refuses to run my validation code even though everything aooears to be set up right... fuck." />
+    <MESSAGE value="Figured out my problem! Thanks professor!&#10;&#10;Continuing on with client side validation setup, woo!" />
+    <MESSAGE value="Set up error labels to the right of my text boxes on the registration form." />
+    <MESSAGE value="Done for the day.&#10;Tomorrow I my goal is to finish up with project 2 and start on project 3.&#10;&#10;Project 2 still needs validation code for each of the input boxes in the form. Maybe a little cleaning up of the code as well. Hopefully no more than a couple of hours.&#10;&#10;Run Adam run!&#10;Almost there!! We got this!!" />
+    <MESSAGE value="organized code to add in the if functions for each of the form fields. All that is left to do is add the code! should take one more day. Woo!" />
+    <MESSAGE value="Adding in validation code for on blur events.&#10;&#10;Still need to add:&#10;password reqs&#10;repeat password reqs&#10;zipcode reqs&#10;phone number reqs&#10;&#10;and submit validation for:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;looking like I will be finishing tomorrow morning." />
+    <MESSAGE value="Finished adding:&#10;password reqs&#10;repeat password reqs&#10;zipcode reqs&#10;phone number reqs&#10;&#10;stil working on:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;All most done!! Run Adam Run!" />
+    <MESSAGE value="Finished adding:&#10;state&#10;gender&#10;marital status&#10;and dob.&#10;&#10;That is it!&#10;Time to turn in project 2 and start on project 3!" />
+    <MESSAGE value="First Commit of project 3!&#10;&#10;Time to organize and work as fast as possible! I have less than 3 days to get this finished to pass the class, we got this!" />
+    <MESSAGE value="projectInfo updated, time to start scafolding the project!" />
+    <MESSAGE value="Updated to a .php file and getting things started!&#10;&#10;Taking some stabs at this php code, think I am starting to understand a few basics, but this will require a little focus.&#10; &#10; A little confusing, but so far so good though." />
+    <MESSAGE value="moving along, excited to come back and work at it tomorrow!" />
+    <MESSAGE value="I think I am finished! Hell yea! one more project to take care of tomorrow and I am done for the semester!" />
+    <MESSAGE value="Actually, i decided to add some more code to make sure the valid form fields reappear on the form after submission.&#10;&#10;I half broke the reset button in the process, but hey, I think this is better overall. Guess we will see." />
+    <MESSAGE value="Finished and ready to turn in" />
+    <MESSAGE value="I was mistaken, I needed to update several layers of the validation; Thankfully I am almost done now." />
+    <MESSAGE value="Actually, this is MVP code, so I am done. Next project!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actually, this is MVP code, so I am done. Next project!" />
+  </component>
+</project>

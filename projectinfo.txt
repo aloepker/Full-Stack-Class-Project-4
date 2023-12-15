@@ -1,0 +1,41 @@
+Building off Project 2:
+
+
+o If PHP detects invalid form data, return to Registration page
+with messaging on each form field that failed. Make sure to have all
+ valid and invalid user data populated on the
+screen so the user does not have to remember what was typed.
+
+o Upon successful PHP form validation, submit valid data to the
+ Registration Confirmation page and display a confirmation page.
+  This confirmation page will be read only, so the
+user cannot modify the data on this screen.
+
+• Follow coding standards http://www.w3schools.com/html/html5_syntax.asp
+
+
+<?php echo isset($_POST['Address2']) ? htmlspecialchars($_POST['Address2']) : ''; ?>
+
+ <!-- "<?php echo htmlspecialchars($username); ?>"  -->
+
+ <!--"<?php echo htmlspecialchars($password); ?>"-->
+
+ <?php echo htmlspecialchars($repeatPassword); ?>
+
+ "<?php echo htmlspecialchars($firstName); ?>"
+
+ <?php echo htmlspecialchars($lastName); ?>
+
+ <?php echo htmlspecialchars($address1); ?>
+
+ <?php echo htmlspecialchars($address2); ?>
+
+ <?php echo htmlspecialchars($city); ?>
+
+ <?php echo htmlspecialchars($zipCode); ?>
+
+<?php echo htmlspecialchars($phoneNumber); ?>
+
+<?php echo htmlspecialchars($email); ?>
+
+
