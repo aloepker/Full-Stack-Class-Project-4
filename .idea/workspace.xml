@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database.">
-      <change afterPath="$PROJECT_DIR$/connectionInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/insertValidData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pdo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selectUserData.php" afterDir="false" />
+    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/confirmation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectinfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projectinfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertValidData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertValidData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selectUserData.php" beforeDir="false" afterPath="$PROJECT_DIR$/selectUserData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <workItem from="1702609691812" duration="5904000" />
       <workItem from="1702622128125" duration="315000" />
       <workItem from="1702655506651" duration="8307000" />
-      <workItem from="1702676443762" duration="4458000" />
+      <workItem from="1702676443762" duration="7889000" />
     </task>
     <task id="LOCAL-00001" summary="Got organized on my new windows machine after apache2 and nginx bricked my linux laptop trying to both run at startup with default config values &gt;.&lt;. I have managed to start the javascript validation code, definitely still in the beginning stages though. Steady as she goes.">
       <option name="closed" value="true" />
@@ -267,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702677658893</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!">
+      <option name="closed" value="true" />
+      <created>1702682709458</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702682709458</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +310,7 @@
     <MESSAGE value="Actually, this is MVP code, so I am done. Next project!" />
     <MESSAGE value="Project 4's First Commit!&#10;&#10;Run Adam Run! you have 8.5 hours to get this done!" />
     <MESSAGE value="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database." />
+    <MESSAGE value="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!" />
   </component>
 </project>

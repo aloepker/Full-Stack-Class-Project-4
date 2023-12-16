@@ -1,146 +1,148 @@
 <?php
 
-$username = $password = $repeatPassword = $firstName = $lastName = $address1 = $address2 = $city = $state = $zipCode = $phoneNumber = $email = $gender = $maritalStatus = $dob = '';
-$errors = [];
+    include 'connectionInfo.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $password = $repeatPassword = $firstName = $lastName = $address1 = $address2 = $city = $state = $zipCode = $phoneNumber = $email = $gender = $maritalStatus = $dob = '';
+    $errors = [];
 
-    // Validate Username
-    if (empty($_POST["Username"])) {
-        $errors["Username"] = "Username is required";
-    } elseif (strlen($_POST["Username"]) < 6 || strlen($_POST["Username"]) > 50) {
-        $errors["Username"] = "Username must be between 6 and 50 characters";
-    } else {
-        $username = test_input($_POST["Username"]);
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        // Validate Username
+        if (empty($_POST["Username"])) {
+           $errors["Username"] = "Username is required";
+        } elseif (strlen($_POST["Username"]) < 6 || strlen($_POST["Username"]) > 50) {
+            $errors["Username"] = "Username must be between 6 and 50 characters";
+        } else {
+            $username = test_input($_POST["Username"]);
+       }
+
+        // Validate Password
+        if (empty($_POST["Password"])) {
+            $errors["Password"] = "Password is required";
+        } elseif (strlen($_POST["Password"]) < 8 || strlen($_POST["Password"]) > 50) {
+           $errors["Password"] = "Password must be between 8 and 50 characters";
+        } elseif (!preg_match('/[A-Z]/', $_POST["Password"])) {
+            $errors["Password"] = "Password must contain at least one uppercase letter";
+        } elseif (!preg_match('/[a-z]/', $_POST["Password"])) {
+            $errors["Password"] = "Password must contain at least one lowercase letter";
+        } elseif (!preg_match('/[0-9]/', $_POST["Password"])) {
+            $errors["Password"] = "Password must contain at least one number";
+        } elseif (!preg_match('/[^A-Za-z0-9]/', $_POST["Password"])) {
+            $errors["Password"] = "Password must contain at least one special character";
+        } else {
+            $password = test_input($_POST["Password"]);
+        }
+
+        // Validate Repeat Password
+        if (empty($_POST["Repeat_Password"]) || $_POST["Repeat_Password"] !== $_POST["Password"]) {
+            $errors["Repeat_Password"] = "Passwords must match";
+        } else {
+            $repeatPassword = test_input($_POST["Repeat_Password"]);
+        }
+
+        // Validate First Name
+        if (empty($_POST["First_Name"])) {
+            $errors["First_Name"] = "First Name is required";
+        } elseif (strlen($_POST["First_Name"]) > 50) {
+            $errors["First_Name"] = "First Name must be less than 50 characters";
+        } else {
+            $firstName = test_input($_POST["First_Name"]);
+        }
+
+        // Validate Last Name
+        if (empty($_POST["Last_Name"])) {
+            $errors["Last_Name"] = "Last Name is required";
+        } else if (strlen($_POST["Last_Name"]) > 50) {
+            $errors["Last_Name"] = "Last Name must be less than 50 characters";
+        } else {
+            $lastName = test_input($_POST["Last_Name"]);
+        }
+
+        // Validate Address1
+        if (empty($_POST["Address1"])) {
+            $errors["Address1"] = "Address is required";
+        } else if (strlen($_POST["Address1"]) > 100) {
+            $errors["Address1"] = "Address must be less than 100 characters";
+        } else {
+            $address1 = test_input($_POST["Address1"]);
+        }
+
+        // Validate Address2
+        if (!empty($_POST["Address2"]) && strlen($_POST["Address2"]) > 100) {
+            $errors["Address2"] = "Address Line 2 must be less than 100 characters";
+        } else {
+            $address2 = test_input($_POST["Address2"]);
+        }
+
+        // Validate City
+        if (empty($_POST["City"])) {
+            $errors["City"] = "City is required";
+        } elseif (strlen($_POST["City"]) > 50) {
+            $errors["City"] = "City must be less than 50 characters";
+        } else {
+            $city = test_input($_POST["City"]);
+        }
+
+        // Validate State
+        if ($_POST["state"] == "na") {
+            $errors["State"] = "Please select a State";
+        } else {
+            $state = test_input($_POST["state"]);
+        }
+
+        // Validate Zip Code
+        if (empty($_POST["Zip_Code"]) || !preg_match("/^\d{5}(-\d{4})?$/", $_POST["Zip_Code"])) {
+            $errors["Zip_Code"] = "Zipcode must be a valid format (e.g., 12345 or 12345-6789)";
+        } else {
+            $zipCode = test_input($_POST["Zip_Code"]);
+        }
+
+        // Validate Phone Number
+        if (empty($_POST["Phone_Number"]) || !preg_match("/^\(\d{3}\) \d{3}-\d{4}$/", $_POST["Phone_Number"])) {
+            $errors["Phone_Number"] = "Phone Number must be in the format (123) 456-7890";
+        } else {
+            $phoneNumber = test_input($_POST["Phone_Number"]);
+        }
+
+        // Validate Email
+        if (empty($_POST["Email"]) || !filter_var($_POST["Email"], FILTER_VALIDATE_EMAIL)) {
+            $errors["Email"] = "Please enter a valid Email address";
+        } else {
+            $email = test_input($_POST["Email"]);
+        }
+
+        // Validate Gender
+        if (empty($_POST["Gender"])) {
+            $errors["Gender"] = "Please select a Gender";
+        } else {
+            $gender = test_input($_POST["Gender"]);
+        }
+
+        // Validate Marital Status
+        if (empty($_POST["Marital_Status"])) {
+            $errors["Marital_Status"] = "Please select Marital Status";
+        } else {
+            $maritalStatus = test_input($_POST["Marital_Status"]);
+        }
+
+        // Validate Date of Birth
+        if (empty($_POST["DOB"])) {
+            $errors["DOB"] = "Please enter your date of birth";
+        } else {
+            $dob = test_input($_POST["DOB"]);
+        }
+// I think this gets replaced with a call to the insert valid data file or something
+        if (empty($errors)) {
+            header("Location: confirmation.php");
+            exit();
+        }
     }
-
-    // Validate Password
-    if (empty($_POST["Password"])) {
-        $errors["Password"] = "Password is required";
-    } elseif (strlen($_POST["Password"]) < 8 || strlen($_POST["Password"]) > 50) {
-        $errors["Password"] = "Password must be between 8 and 50 characters";
-    } elseif (!preg_match('/[A-Z]/', $_POST["Password"])) {
-        $errors["Password"] = "Password must contain at least one uppercase letter";
-    } elseif (!preg_match('/[a-z]/', $_POST["Password"])) {
-        $errors["Password"] = "Password must contain at least one lowercase letter";
-    } elseif (!preg_match('/[0-9]/', $_POST["Password"])) {
-        $errors["Password"] = "Password must contain at least one number";
-    } elseif (!preg_match('/[^A-Za-z0-9]/', $_POST["Password"])) {
-        $errors["Password"] = "Password must contain at least one special character";
-    } else {
-        $password = test_input($_POST["Password"]);
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
-
-    // Validate Repeat Password
-    if (empty($_POST["Repeat_Password"]) || $_POST["Repeat_Password"] !== $_POST["Password"]) {
-        $errors["Repeat_Password"] = "Passwords must match";
-    } else {
-        $repeatPassword = test_input($_POST["Repeat_Password"]);
-    }
-
-    // Validate First Name
-    if (empty($_POST["First_Name"])) {
-        $errors["First_Name"] = "First Name is required";
-    } elseif (strlen($_POST["First_Name"]) > 50) {
-        $errors["First_Name"] = "First Name must be less than 50 characters";
-    } else {
-        $firstName = test_input($_POST["First_Name"]);
-    }
-
-    // Validate Last Name
-    if (empty($_POST["Last_Name"])) {
-        $errors["Last_Name"] = "Last Name is required";
-    } else if (strlen($_POST["Last_Name"]) > 50) {
-        $errors["Last_Name"] = "Last Name must be less than 50 characters";
-    } else {
-        $lastName = test_input($_POST["Last_Name"]);
-    }
-
-    // Validate Address1
-    if (empty($_POST["Address1"])) {
-        $errors["Address1"] = "Address is required";
-    } else if (strlen($_POST["Address1"]) > 100) {
-        $errors["Address1"] = "Address must be less than 100 characters";
-    } else {
-        $address1 = test_input($_POST["Address1"]);
-    }
-
-    // Validate Address2
-    if (!empty($_POST["Address2"]) && strlen($_POST["Address2"]) > 100) {
-        $errors["Address2"] = "Address Line 2 must be less than 100 characters";
-    } else {
-        $address2 = test_input($_POST["Address2"]);
-    }
-
-    // Validate City
-    if (empty($_POST["City"])) {
-        $errors["City"] = "City is required";
-    } elseif (strlen($_POST["City"]) > 50) {
-        $errors["City"] = "City must be less than 50 characters";
-    } else {
-        $city = test_input($_POST["City"]);
-    }
-
-    // Validate State
-    if ($_POST["state"] == "na") {
-        $errors["State"] = "Please select a State";
-    } else {
-        $state = test_input($_POST["state"]);
-    }
-
-    // Validate Zip Code
-    if (empty($_POST["Zip_Code"]) || !preg_match("/^\d{5}(-\d{4})?$/", $_POST["Zip_Code"])) {
-        $errors["Zip_Code"] = "Zipcode must be a valid format (e.g., 12345 or 12345-6789)";
-    } else {
-        $zipCode = test_input($_POST["Zip_Code"]);
-    }
-
-    // Validate Phone Number
-    if (empty($_POST["Phone_Number"]) || !preg_match("/^\(\d{3}\) \d{3}-\d{4}$/", $_POST["Phone_Number"])) {
-        $errors["Phone_Number"] = "Phone Number must be in the format (123) 456-7890";
-    } else {
-        $phoneNumber = test_input($_POST["Phone_Number"]);
-    }
-
-    // Validate Email
-    if (empty($_POST["Email"]) || !filter_var($_POST["Email"], FILTER_VALIDATE_EMAIL)) {
-        $errors["Email"] = "Please enter a valid Email address";
-    } else {
-        $email = test_input($_POST["Email"]);
-    }
-
-    // Validate Gender
-    if (empty($_POST["Gender"])) {
-        $errors["Gender"] = "Please select a Gender";
-    } else {
-        $gender = test_input($_POST["Gender"]);
-    }
-
-    // Validate Marital Status
-    if (empty($_POST["Marital_Status"])) {
-        $errors["Marital_Status"] = "Please select Marital Status";
-    } else {
-        $maritalStatus = test_input($_POST["Marital_Status"]);
-    }
-
-    // Validate Date of Birth
-    if (empty($_POST["DOB"])) {
-        $errors["DOB"] = "Please enter your date of birth";
-    } else {
-        $dob = test_input($_POST["DOB"]);
-    }
-
-    if (empty($errors)) {
-        header("Location: confirmation.php");
-        exit();
-    }
-}
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 ?>
 
 <!doctype html>
