@@ -1,6 +1,10 @@
 <?php
 
-    include 'connectionInfo.php';
+    session_start();
+    $servername = "localhost";
+    $dbname = "project";
+    $userName = "root";
+    $passWord = "";
 
     $username = $password = $repeatPassword = $firstName = $lastName = $address1 = $address2 = $city = $state = $zipCode = $phoneNumber = $email = $gender = $maritalStatus = $dob = '';
     $errors = [];
@@ -133,7 +137,44 @@
         }
 // I think this gets replaced with a call to the insert valid data file or something
         if (empty($errors)) {
-            header("Location: confirmation.php");
+            //header("Location: confirmation.php");
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname",
+                    $userName, $passWord);
+                //set pdo error mode to exception:
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                $sql = $conn->prepare("INSERT INTO registration (userName, password, firstName, lastName,
+                   address1, address2, city, state, zipCode, phone, email, gender, maritalStatus, dateOfBirth)         
+            VALUES (:username, :password, :firstName, :lastName, :address1, :address2, :city, :state, :zipCode, :phoneNumber, :email, :gender, :maritalStatus, :dob)");
+
+                $sql->bindParam(':username', $username);
+                $sql->bindParam(':password', $password);
+                $sql->bindParam(':firstName', $firstName);
+                $sql->bindParam(':lastName', $lastName);
+                $sql->bindParam(':address1', $address1);
+                $sql->bindParam(':address2', $address2);
+                $sql->bindParam(':city', $city);
+                $sql->bindParam(':state', $state);
+                $sql->bindParam(':zipCode', $zipCode);
+                $sql->bindParam(':phoneNumber', $phoneNumber);
+                $sql->bindParam(':email', $email);
+                $sql->bindParam(':gender', $gender);
+                $sql->bindParam(':maritalStatus', $maritalStatus);
+                $sql->bindParam(':dob', $dob);
+
+                $sql->execute();
+
+                $last_id = $conn->lastInsertId();
+                $_SESSION["last_id"] = "$last_id";
+
+                header("Location: confirmation.php");
+            } catch (PDOException $e) {
+                echo "Connection failed: " . $e->getMessage();
+            } finally {
+                $conn = null;
+            }
+
             exit();
         }
     }
@@ -207,12 +248,12 @@
         <br>
 
         <label for="First_Name">First Name:
-        <input type="text" id=First_Name name="First Name" placeholder="First Name Here" value="<?php echo isset($_POST['First_Name']) ? htmlspecialchars($_POST['First_Name']) : ''; ?>"></label>
+        <input type="text" id=First_Name name="First_Name" placeholder="First Name Here" value="<?php echo isset($_POST['First_Name']) ? htmlspecialchars($_POST['First_Name']) : ''; ?>"></label>
         <label class="e" id="FN"> First Name Required. Must be between less than 50 characters</label>
         <br>
 
         <label for="Last_Name">Last Name:
-        <input type="text" id=Last_Name name="Last Name" placeholder="Last Name Here" value="<?php echo isset($_POST['Last_Name']) ? htmlspecialchars($_POST['Last_Name']) : ''; ?>"></label>
+        <input type="text" id=Last_Name name="Last_Name" placeholder="Last Name Here" value="<?php echo isset($_POST['Last_Name']) ? htmlspecialchars($_POST['Last_Name']) : ''; ?>"></label>
         <label class="e" id="LN"> Last Name Required. Must be less than 50 characters </label>
         <br>
 
@@ -291,12 +332,12 @@
         <br>
 
         <label for="Zip_Code">Zip Code:
-        <input type="text" id=Zip_Code name="Zip Code" placeholder="Zip Code Here" value="<?php echo isset($_POST['Zip_Code']) ? htmlspecialchars($_POST['Zip_Code']) : ''; ?>"></label>
+        <input type="text" id=Zip_Code name="Zip_Code" placeholder="Zip Code Here" value="<?php echo isset($_POST['Zip_Code']) ? htmlspecialchars($_POST['Zip_Code']) : ''; ?>"></label>
         <label class="e" id="Z"> Zipcode must be between 5 and 9 numbers</label>
         <br>
 
         <label for="Phone_Number">Phone Number:
-        <input type="text" id=Phone_Number name="Phone Number" placeholder="Phone Number Here"  value="<?php echo isset($_POST['Phone_Number']) ? htmlspecialchars($_POST['Phone_Number']) : ''; ?>"></label>
+        <input type="text" id=Phone_Number name="Phone_Number" placeholder="Phone Number Here"  value="<?php echo isset($_POST['Phone_Number']) ? htmlspecialchars($_POST['Phone_Number']) : ''; ?>"></label>
         <label class="e" id="PN"> Phone Number must 10 digits with no punctuation.       </label>
         <br>
 
@@ -314,8 +355,8 @@
         <br>
 
         <label>Marital Status:
-        <input type="radio" id=single name="Marital Status" <?php echo ($maritalStatus === 'single') ? 'checked' : ''; ?>><label for="single">Single</label>
-        <input type="radio" id=married name="Marital Status" <?php echo ($maritalStatus === 'married') ? 'checked' : ''; ?>><label for="married">Married</label></label>
+        <input type="radio" id=single name="Marital_Status" <?php echo ($maritalStatus === 'single') ? 'checked' : ''; ?>><label for="single">Single</label>
+        <input type="radio" id=married name="Marital_Status" <?php echo ($maritalStatus === 'married') ? 'checked' : ''; ?>><label for="married">Married</label></label>
         <label class="e" id="M"> Please select one </label>
         <br>
 

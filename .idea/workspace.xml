@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!">
+    <list default="true" id="fc3f0299-cb15-4cd0-ac48-d15d51ef0e8a" name="Changes" comment="Got stuck on an error, got past that and stuck on another error, got past that and got stuck on another error. At least all have moved along fairly quickly.&#10;&#10;I have the SQL database being updated upon submission. i am now just having trouble retrieving data and displaying it on disabled fields. Getting close I feel though!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectionInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/connectionInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insertValidData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertValidData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectinfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projectinfo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selectUserData.php" beforeDir="false" afterPath="$PROJECT_DIR$/selectUserData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +105,7 @@
       <workItem from="1702609691812" duration="5904000" />
       <workItem from="1702622128125" duration="315000" />
       <workItem from="1702655506651" duration="8307000" />
-      <workItem from="1702676443762" duration="7889000" />
+      <workItem from="1702676443762" duration="18254000" />
     </task>
     <task id="LOCAL-00001" summary="Got organized on my new windows machine after apache2 and nginx bricked my linux laptop trying to both run at startup with default config values &gt;.&lt;. I have managed to start the javascript validation code, definitely still in the beginning stages though. Steady as she goes.">
       <option name="closed" value="true" />
@@ -271,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702682709458</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Got the files from the videos coppied, now to make sense of them after dinner and a game of halo.">
+      <option name="closed" value="true" />
+      <created>1702686160405</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702686160405</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +323,8 @@
     <MESSAGE value="Project 4's First Commit!&#10;&#10;Run Adam Run! you have 8.5 hours to get this done!" />
     <MESSAGE value="Old files have been imported, updates have started.&#10;&#10;now to learn connecting with a SQL database." />
     <MESSAGE value="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Followed the pfd file on the project page to get the database end of things atarted. So far so good.&#10;&#10;Now I am working on watching the connecting to databases with php class video to get htose files organized.&#10;&#10;Woo!" />
+    <MESSAGE value="Got the files from the videos coppied, now to make sense of them after dinner and a game of halo." />
+    <MESSAGE value="Got stuck on an error, got past that and stuck on another error, got past that and got stuck on another error. At least all have moved along fairly quickly.&#10;&#10;I have the SQL database being updated upon submission. i am now just having trouble retrieving data and displaying it on disabled fields. Getting close I feel though!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got stuck on an error, got past that and stuck on another error, got past that and got stuck on another error. At least all have moved along fairly quickly.&#10;&#10;I have the SQL database being updated upon submission. i am now just having trouble retrieving data and displaying it on disabled fields. Getting close I feel though!" />
   </component>
 </project>

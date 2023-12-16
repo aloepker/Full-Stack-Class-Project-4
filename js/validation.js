@@ -179,7 +179,7 @@ function submitValidation(event) {
     }
 
 //X 14 marital status
-    let maritalSelected = Array.from(document.querySelectorAll('input[name="Marital Status"]')).some(radio => radio.checked);
+    let maritalSelected = Array.from(document.querySelectorAll('input[name="Marital_Status"]')).some(radio => radio.checked);
 
     if (maritalSelected) {
         document.getElementById("M").style.visibility = 'hidden';
